@@ -64,8 +64,6 @@ if __name__ == '__main__':
         print('Reading the model checkpoint file to retrive the model parameters...')
         model_checkpoint_path = f'/media/zahra/zahraext/storage/DATA_jupyter/mol_proj/results_n_data/VAE+GNN_results/gnn_min2/{VAE_model}_best_state.pt'
         test_loop(model, splitted_data.testloader, idx_to_char, model_checkpoint_path, out_dir)
-        gen_latentZ(model, splitted_data.testloader, model_checkpoint_path, out_dir)
-        # get_latent_labels(model, train_loader, model_checkpoint_path, out_dir)
 
 
 

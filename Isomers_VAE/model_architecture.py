@@ -25,7 +25,7 @@ class VAE_model(nn.Module):
         self.decoder_dense = nn.Linear(2*input_dim, input_dim)
         self.decoder_dropout = nn.Dropout(p=0.2)
         
-        # Regressor -- xyz
+        # Regressor
         self.regressor_linear1 = nn.Linear(latent_dim, latent_dim)
         self.regressor_act1 = nn.LeakyReLU()
         self.regressor_dropout = nn.Dropout(p=0.005)
